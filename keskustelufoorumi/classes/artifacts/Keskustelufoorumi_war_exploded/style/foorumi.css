@@ -1,0 +1,175 @@
+
+body {
+    font-family: "Myanmar Text", sans-serif;
+    background-image: url("../images/taustakuva.jpg");
+    background-color: rgb(106,177,135);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h5 {
+    color: black;
+}
+
+a:link, a:visited {
+    text-decoration: underline;
+    padding-right: 10px;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+div {
+    background-color: rgba(230, 230, 250, 0.8);
+    border-radius: 1%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    text-align: center;
+    margin: 2%;
+}
+
+textarea {
+    resize: none;
+}
+
+#vitekstikentta {
+    border: 3px solid #cccccc;
+    width: 400px;
+    height: 150px
+}
+
+#viotsikko {
+    border: 3px solid #cccccc;
+    width: 400px;
+}
+
+#kuvausteksti {
+
+}
+
+#banneri {
+    position: relative;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 7px;
+    background-color: rgb(93,83,94);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3%;
+}
+
+#aihealueet {
+    letter-spacing: 2px;
+    float: left;
+    margin-left: 3%;
+    width: 30%;
+}
+
+#fiidi {
+    float: right;
+    margin-left: 3%;
+    width: 45%;
+}
+
+table {
+    width: 90%;
+    border: 1px solid black;
+}
+
+#lomake {
+    width: 40%;
+}
+
+#login {
+    color: black;
+    font-size: 12px;
+    float: right;
+}
+
+th, td {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+td.filler {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+td.kirjoittaja {
+    width: 25%;
+    padding: 0px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin: 0px;
+    text-align: left;
+    border: 0px;
+    font-size: 70%;
+    font-weight: 600;
+}
+
+td.date {
+    width: 25%;
+    padding: 0px;
+    padding-right: 20px;
+    padding-top: 5px;
+    margin: 0px;
+    text-align: right;
+    border: 0px;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+td.button1 {
+    width: 25%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    text-align: right;
+}
+
+td.button2 {
+    width: 25%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    text-align: left;
+}
+
+td.ketjuotsikko {
+    padding: 0px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin: 0px;
+    border: 0px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+tr.ketjuboxi {
+    min-height: 300px;
+}
+
+td.ketjuviesti {
+    min-height: 300px;
+    padding: 0px;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin: 0px;
+    border: 0px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+

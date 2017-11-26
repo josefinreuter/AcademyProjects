@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS `salasana`;
+CREATE TABLE `salasana` (
+`salasanaid` int NOT NULL AUTO_INCREMENT,
+`kayttaja` int NOT NULL,
+`salasana` varchar(128) NOT NULL,
+CONSTRAINT `salasana_henkilo_fk` FOREIGN KEY (`kayttaja`) REFERENCES
+`henkilo` (`hloid`),
+PRIMARY KEY (`salasanaid`)
+);
+INSERT INTO `salasana` VALUES(1,1,'academy');
