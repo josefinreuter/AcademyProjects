@@ -1,0 +1,193 @@
+/*Written by Riina Purovesi 2017*/
+body {
+    background-image: url(../Pictures/snowman_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+#kuusi {
+    position: relative;
+    left: 25%;
+    width: 400px;
+    height: 550px;
+}
+#otsikko {
+    text-align: center;
+    font-family: 'Mountains of Christmas', cursive;
+}
+#vasen {
+    font-size: 20px;
+    font-family: Gabriola;
+    float:right; display:inline; width: 25%;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 25px;
+    padding: 15px;
+    margin-right: 5px;
+}
+img {
+     cursor: move;
+}
+#koristeet {
+     position: absolute;
+}
+#k1 {
+    top: 70px;
+    left: 50px
+}
+#k2 {
+    top: 80px;
+    left: 70px
+}
+#k3 {
+    top: 90px;
+    left: 50px
+}
+#k4 {
+    top: 100px;
+    left: 70px
+}
+#k5 {
+    top: 5px;
+    left: 10px
+}
+#k6 {
+    top: 10px;
+    left: 80px
+}
+#k7 {
+    top: 140px;
+    left: 50px
+}
+#k8 {
+    top: 150px;
+    left: 70px
+}
+#k9 {
+    top: 150px;
+    left: 50px
+}
+#k10 {
+    top: 160px;
+    left: 70px
+}
+
+#k11 {
+    top: 200px;
+    left: 50px
+}
+#k12 {
+    top: 210px;
+    left: 70px
+}
+#k13 {
+    top: 210px;
+    left: 50px
+}
+#k14 {
+    top: 220px;
+    left: 70px
+}
+#k15 {
+    top: 260px;
+    left: 50px
+}
+#k16 {
+    top: 270px;
+    left: 70px
+}
+#k17 {
+    top: 270px;
+    left: 50px
+}
+#k18 {
+    top: 280px;
+    left: 70px
+}
+#k19 {
+    top: 500px;
+    left: 10px
+}
+#k20 {
+    top: 500px;
+    left: 70px
+}
+#k21 {
+    top: 530px;
+    left: 10px
+}
+#k22 {
+    top: 510px;
+    left: 50px
+}
+#k23 {
+    top: 310px;
+    left: 50px
+}
+#k24 {
+    top: 320px;
+    left: 50px
+}
+#k25 {
+    top: 320px;
+    left: 70px
+}
+#k26 {
+    top: 330px;
+    left: 70px
+}
+#k27 {
+    top: 370px;
+    left: 50px
+}
+#k28 {
+    top: 380px;
+    left: 50px
+}
+#k29 {
+    top: 380px;
+    left: 70px
+}
+#k30 {
+    top: 390px;
+    left: 70px
+}
+#k31 {
+    top: 420px;
+    left: 10px
+}
+#k32 {
+    top: 420px;
+    left: 10px
+}
+#k33 {
+    top: 430px;
+    left: 20px
+}
+#k34 {
+    top: 430px;
+    left: 20px
+}
+#k35 {
+    top: 440px;
+    left: 10px
+}
+#k36 {
+    top: 440px;
+    left: 10px
+}
+#k37 {
+    top: 430px;
+    left: 10px
+}
+#k38 {
+     top: 440px;
+     left: 20px
+}
+#k39 {
+    top: 440px;
+    left: 10px
+}
+div.koristeet {
+    position: absolute;
+}

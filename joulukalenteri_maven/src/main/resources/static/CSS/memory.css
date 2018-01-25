@@ -1,0 +1,98 @@
+/*Written by Josefin Reuter 2017*/
+body {
+    background-image: url("../Pictures/christmasbackground.jpg");
+    background-size: cover;
+    text-align: center;
+}
+#heading {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 50px;
+    padding-left: 30px;
+}
+.gamepic{
+    height: 64px;
+    width: 64px;
+}
+#congrats, #point, #clicks{
+    font-family: Gabriola;
+    font-size: 20px;
+    padding-left: 30px;
+}
+#startover{
+    padding-left: 30px;
+}
+ul {
+    padding-top: 10px;
+    padding-left: 30px;
+    list-style: none;
+    margin: 0 auto;
+    width: 350px;
+}
+ul li {
+    background-color: #E2AB45;
+    border: 1px solid #F0BA56;
+    padding-top: 6px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    line-height: 51px;
+    width: 80px;
+    height: 80px;
+}
+ul li img {
+    display: none;
+}
+ul li span {
+    display: none;
+}
+ul li.clicked {
+    cursor: default;
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+ul li.disabled {
+    cursor: default;
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+ul li.points {
+    cursor: default;
+    background-color: #C56662;
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+ul li.disabled img {
+    display: inline-block;
+}
+ul li.clicked img {
+    display: inline-block;
+}
+ul li.points img {
+    display: inline-block;
+}
+ul li:hover {
+    background-color: #E1A027;
+}
+ul li.points:hover {
+    background-color: #C56662;
+}
+.modal{
+    display: none;
+    position: fixed;
+    background-color: rgba(191, 190, 190, 0.4);
+    padding-top: 150px;
+    padding-left: 30px;
+}
+.modaltext{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Gabriola;
+    background-color: snow;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10%;
+}
+.closemodal {
+    cursor: pointer;
+    float: right;
+}

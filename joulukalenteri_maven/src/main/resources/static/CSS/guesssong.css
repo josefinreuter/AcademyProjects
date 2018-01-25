@@ -1,0 +1,58 @@
+/*Written by Riina Purovesi 2017*/
+body {
+    background-image: url(../Pictures/snowflakes.png);
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    font-family: Gabriola;
+}
+#otsikko {
+    color: black;
+    font-weight: bold;
+    font-family: 'Mountains of Christmas', cursive;
+    text-align: center;
+}
+#words {
+     font-style: italic;
+}
+#words2 {
+    font-style: italic;
+}
+#visa {
+    text-align: center;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 25px;
+    padding: 5%;
+    margin-left: 25%;
+    margin-right:25%;
+}
+#SongName {
+    font-weight: bold;
+}
+#sav {
+    font-weight: bold;
+    font-style: italic;
+
+}
+.modaltext {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: darkred;
+    background-color: snow;
+    margin: auto;
+    padding: 20px;
+    border: dotted;
+    border-radius: 15%;
+    width: 80%;
+    margin-top: 25%;
+}
+.closemodal1 {
+    cursor: pointer;
+}
+#voittaa {
+    font-weight: bold;
+    color: red;
+}

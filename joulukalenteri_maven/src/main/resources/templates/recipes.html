@@ -1,0 +1,39 @@
+<!--Written by Riina Purovesi 2017-->
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reseptit</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/CSS/recipes.css" th:href="@{/CSS/recipes.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="content">
+<h1 id="heading"><b>Jouluiset reseptit</b></h1>
+<p id="info">Ota tästä jouluiset reseptit talteen!</p>
+<table>
+    <th:block th:each="resepti : ${users}">
+        <th id="otsikko" th:text="${resepti.nimi} + ' - resepti #' +${sivu+1}"></th>
+    <tr id="taulu">
+        <td id= "hei" th:utext="${resepti.kuvaus}"></td>
+    </tr>
+    </th:block>
+</table>
+
+<div id="navi"     th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}">
+    <ul class="pager">
+        <li th:if="${users.number > 0}" class="previous"><a href="#" th:href="${urlBuilder.replaceQueryParam('page', users.number-1).toUriString()}" style="color: red;">Edellinen</a></li>
+        <li th:unless="${users.number >= users.totalPages-1}" class="next"><a href="#" th:href="${urlBuilder.replaceQueryParam('page', users.number+1).toUriString()}" style="color: red;">Seuraava</a></li>
+    </ul>
+    <ul class="pagination">
+        <li  th:each="i : ${#numbers.sequence( 0, users.totalPages-1)}"  th:class="${users.number==i}?'active'">
+            <a href="#" th:text="${i+1}" th:href="${urlBuilder.replaceQueryParam('page', i).toUriString()}"></a>
+        </li>
+    </ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/*written by Hennileena Calonius 2017*/
+body {
+    background-image: url("../Pictures/joulutausta.jpg");
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+#heading {
+    font-family: 'Mountains of Christmas', cursive;
+    color: snow;
+    background-color: rgba(188, 143, 143, 0.8);
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5%;
+    padding: 7px;
+    font-size: 45px;
+    margin-top: 5%;
+    margin-bottom: 40px;
+}
+
+#heading2 {
+    background-color: rgba(188, 143, 143, 0.8);
+    color: snow;
+    width: 90%;
+    border-radius: 5%;
+    padding: 7px;
+    font-family: Gabriola;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 15%;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#linklist {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+#link {
+    font-family: Gabriola;
+    font-weight: bold;
+    font-size: 23px;
+    width: 80%;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 1px black;
+    background-color: rgba(188, 143, 143, 0.6);
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#sentencelist {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#translationlist {
+    background-color: rgba(188, 143, 143, 0.6);
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 8%;
+    width: 90%;
+}
+
+.translationsentence {
+    font-family: Gabriola;
+    font-size: 26px;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#backbutton {
+    margin-top: 50px;
+}

@@ -1,0 +1,66 @@
+<!--Written by Josefin Reuter 2017-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muistipeli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="CSS/memory.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="loosemodal" class="modal">
+    <div class="modaltext">
+        <h3>Liikaa klikkauksia, yritä uudestaan.. <span class="closemodal">&times;</span></h3>
+    </div>
+</div>
+<div id="content">
+    <h1 id="heading">Suomi 100 muistipeli</h1>
+    <ul class="game">
+        <li><span>1</span><img class="gamepic" src="Pictures/bauble.png" alt="bauble"></li>
+        <li><span>2</span><img class="gamepic" src="Pictures/suomi_100_2.png" alt="suomi100"></li>
+        <li><span>3</span><img class="gamepic" src="Pictures/christmas-tree.png" alt="tree"></li>
+        <li><span>1</span><img class="gamepic" src="Pictures/bauble.png" alt="bauble"></li>
+        <li><span>4</span><img class="gamepic" src="Pictures/santa-claus.png" alt="santa"></li>
+        <li><span>5</span><img class="gamepic" src="Pictures/snowflake.png" alt="snowflake"></li>
+        <li><span>6</span><img class="gamepic" src="Pictures/gift2.png" alt="gift"></li>
+        <li><span>5</span><img class="gamepic" src="Pictures/snowflake.png" alt="snowflake"></li>
+        <li><span>7</span><img class="gamepic" src="Pictures/suomenlippu.png" alt="lippu"></li>
+        <li><span>6</span><img class="gamepic" src="Pictures/gift2.png" alt="gift"></li>
+        <li><span>3</span><img class="gamepic" src="Pictures/christmas-tree.png" alt="tree"></li>
+        <li><span>2</span><img class="gamepic" src="Pictures/suomi_100_2.png" alt="suomi100"></li>
+        <li><span>8</span><img class="gamepic" src="Pictures/snowman2.png" alt="snowman"></li>
+        <li><span>8</span><img class="gamepic" src="Pictures/snowman2.png" alt="snowman"></li>
+        <li><span>4</span><img class="gamepic" src="Pictures/santa-claus.png" alt="santa"></li>
+        <li><span>7</span><img class="gamepic" src="Pictures/suomenlippu.png" alt="lippu"></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <p id="clicks"></p>
+        <p id="point"></p>
+        <p id="congrats"></p>
+        <span id="startover"><input type="button" class="btn btn-default" value="Uusi peli" onClick="window.location.reload()"></span>
+    </div>
+</div>
+<audio id="sound" src="/Sound/maammelaulu.mp3" preload="auto" loop="loop"/>
+<script src="JavaScript/Memory.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/*Written by Hennileena Calonius 2017*/
+body {
+    background-image: url("../Pictures/gold.jpg");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+h4, h2 {
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+canvas {
+    width: 90%;
+    margin: auto;
+}
+
+button {
+    background-color: rgba(205,92,92, 0.7);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.nappi, .btn-default {
+    font-size: 14px;
+}
+
+#leftFloat {
+    float: left;
+    margin-left: 5%;
+}
+
+#rightFloat {
+    float: right;
+    margin-right: 5%;
+}
+
+.modal {
+    display: none;
+    margin-top: 35%;
+}
+
+.modaltext {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: darkred;
+    background-color: snow;
+    margin: auto;
+    padding: 20px;
+    border: dotted;
+    border-radius: 15%;
+    width: 80%;
+}
+
+.closemodal1, .closemodal2, .closemodal3 {
+    color: darkred;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+

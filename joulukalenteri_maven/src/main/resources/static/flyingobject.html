@@ -1,0 +1,86 @@
+<!--Written by Riina Purovesi 2017-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lentävä olio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/CSS/flying.css" th:href="@{/CSS/flying.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<div id="alku">
+<h1 id="otsikko">Kadonnut lakki</h1>
+<p id="teksti">Pepe näyttää kadottaneen joululakkinsa ja samalla myös joulumielen. Osaatko auttaa Pepeä löytämään lakkinsa?<br>
+Alla näyttää olevan jonkinlaisia nappuloita..</p>
+</div>
+<body>
+
+<div id="buttons">
+    <button onclick="move2()">1</button>
+    <button onclick="move3()">2</button>
+    <button onclick="move4()">3</button>
+    <br>
+    <button onclick="move6()">4</button>
+    <button onclick="move1()">5</button>
+    <button onclick="move5()">6</button>
+
+</div>
+<br>
+<div id ="container">
+    <img id="anim" src="Pictures/santahat.png" alt="lakki">
+
+    <div id="winning" class="modal">
+        <div id="voitto" class="modaltext">
+            <span class="closemodal1">&times;</span>
+            <h3>Hienoa! Pepe sai lakkinsa ja joulumielensä takaisin!! Great job!</h3>
+        </div>
+    </div>
+
+    <div id="move1" class="modal">
+        <div class="modaltext">
+            <span class="closemodal2">&times;</span>
+            <h3>Hups! Tonttulakki lentelee karkuun! Paina äkkiä jotakin muuta nappulaa!</h3>
+        </div>
+    </div>
+
+    <div id="move2" class="modal">
+        <div class="modaltext">
+            <span class="closemodal3">&times;</span>
+            <h3>Hups! Tonttulakki lentää väärään suuntaan..</h3>
+        </div>
+    </div>
+
+    <div id="move3" class="modal">
+        <div class="modaltext">
+            <span class="closemodal4">&times;</span>
+            <h3>Hups! Mihin se lakki taas on menossa..?</h3>
+        </div>
+    </div>
+
+    <div id="move4" class="modal">
+        <div class="modaltext">
+            <span class="closemodal5">&times;</span>
+            <h3>Hups! Tonttulakki lensi maahan, eikä pepe löydä sitä vieläkään. Yritä vielä.</h3>
+        </div>
+    </div>
+
+    <div id="move5" class="modal">
+        <div class="modaltext">
+            <span class="closemodal6">&times;</span>
+            <h3>Hups! Lakki on taas omilla teillään.. Pepe haluaisi jo tonttulakkinsa takaisin!</h3>
+        </div>
+    </div>
+
+    <img id="pepe" src="Pictures/sadpepe.png" alt="pepe">
+</div>
+
+<script src="JavaScript/Flying.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+</body>
+
+</html>

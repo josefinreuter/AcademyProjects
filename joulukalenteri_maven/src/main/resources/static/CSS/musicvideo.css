@@ -1,0 +1,19 @@
+/*Written by Hennileena Calonius 2017*/
+body {
+    background-image: url("../Pictures/gold.jpg");
+    font-family: 'Mountains of Christmas', cursive;
+    text-align: center;
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.doorTitle {
+    margin-left: auto;
+    padding-top: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+

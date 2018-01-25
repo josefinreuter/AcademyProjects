@@ -1,0 +1,26 @@
+<!--written by Hennileena Calonius 2017-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/CSS/translator.css" th:href="@{/CSS/translator.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Jouluinen kääntäjä</title>
+</head>
+<body>
+    <div th:each="sentence : ${sentences}">
+        <h3 id="heading2" th:text="${sentence.suomi}"></h3>
+        <ul id="translationlist">
+            <li class="translationsentence" th:text="'RUOTSI:  ' + ${sentence.ruotsi}"></li><br></br>
+            <li class="translationsentence" th:text="'ENGLANTI:  ' + ${sentence.englanti}"></li><br></br>
+            <li class="translationsentence" th:text="'ESPANJA:  ' + ${sentence.espanja}"></li><br></br>
+            <li class="translationsentence" th:text="'RANSKA:  ' + ${sentence.ranska}"></li>
+        </ul>
+    </div>
+<button id="backbutton" type="button" class="btn btn-default" onclick="window.location.href='http://localhost:8080/translator'">Takaisin alkuvalikkoon</button>
+</body>
+</html>

@@ -1,0 +1,5 @@
+area, a:hover {
+  cursor: url('../christmascursor.cur'),
+  progress !important;
+}
+

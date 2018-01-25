@@ -1,0 +1,73 @@
+<!--Written by Hennileena Calonius 2017-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+    <link rel="stylesheet" href="CSS/wordguess.css"/>
+    <title>Sana-arvauspeli</title>
+</head>
+<body onload="setPresents()">
+<h2>Arvaa mikä jouluinen sana on kyseessä!</h2>
+<input type="button" class="btn btn-default" value="Aloita uusi peli!" onclick="pickAWord()"><br>
+<canvas width=600 height=72 id="canvas2"></canvas><br>
+<canvas width=600 height=70 id="canvas"></canvas><br>
+<div id="presents">
+    <h3>Sinulla on aluksi viisi joululahjaa. Menetät yhden aina kun valitset väärän kirjaimen.</h3>
+    <canvas width=600 height=70 id="canvas3"></canvas>
+</div>
+<div id="leftFloat">
+    <h3>Valitse kirjain</h3>
+    <button onclick="letterCheck('L');">L</button>
+    <button onclick="letterCheck('A');">A</button>
+    <button onclick="letterCheck('N');">N</button>
+    <button onclick="letterCheck('K');">K</button>
+    <button onclick="letterCheck('J');">J</button>
+    <button onclick="letterCheck('O');">O</button>
+    <button onclick="letterCheck('E');">E</button><br>
+    <button onclick="letterCheck('S');">S</button>
+    <button onclick="letterCheck('U');">U</button>
+    <button onclick="letterCheck('Ö');">Ö</button>
+    <button onclick="letterCheck('I');">I</button>
+    <button onclick="letterCheck('M');">M</button>
+    <button onclick="letterCheck('V');">V</button>
+    <button onclick="letterCheck('P');">P</button><br>
+    <button onclick="letterCheck('Y');">Y</button>
+    <button onclick="letterCheck('D');">D</button>
+    <button onclick="letterCheck('R');">R</button>
+    <button onclick="letterCheck('G');">G</button>
+    <button onclick="letterCheck('H');">H</button>
+    <button onclick="letterCheck('Ä');">Ä</button>
+    <button onclick="letterCheck('T');">T</button>
+</div>
+<div id="rightFloat">
+    <form>
+        <h3>Syötä vastauksesi tähän</h3><br><input id="guess" type="text" class="form-control"><br>
+        <input type="button" class="btn btn-default" value="Tarkista vastaus!" onclick="answerCheck();">
+    </form>
+</div>
+<div id="loseModal" class="modal">
+    <div class="modaltext">
+        <span class="closemodal1">&times;</span>
+        <h3>Voi harmin paikka! Arvasit väärin ja peli päättyi!<br><br>Oikea sana olisi ollut "<span id="correctWord1"></span>".</h3>
+    </div>
+</div>
+<div id="lose2Modal" class="modal">
+    <div class="modaltext">
+        <span class="closemodal2">&times;</span>
+        <h3>Voi ei, kävipä köpelösti! Menetit jokaisen joululahjasi, ja peli päättyi!<br><br>Oikea sana olisi ollut "<span id="correctWord2"></span>".</h3>
+    </div>
+</div>
+<div id="winModal" class="modal">
+    <div class="modaltext">
+        <span class="closemodal3">&times;</span>
+        <h3>Hipheihurraa!! Arvasit sanan oikein! Hienosti pelattu!</h3>
+    </div>
+</div>
+<script src="JavaScript/WordGuess.js"></script>
+</body>
+</html>

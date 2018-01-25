@@ -1,0 +1,36 @@
+/* Written by Riina Purovesi 2017*/
+body {
+    background-image: url(../Pictures/pallo.jpg);
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    font-family: Gabriola;
+}
+#otsikko {
+    color: black;
+    font-weight: bold;
+    font-family: 'Mountains of Christmas', cursive;
+    text-align: center;
+}
+#container {
+    text-align: center;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 1%;
+    margin-left: 35%;
+    margin-right:35%;
+}
+#chatti {
+    text-align: center;
+    font-weight: bold;
+    font-family: Gabriola;
+    font-size: medium;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 25px;
+    padding: 2%;
+    margin-left: 25%;
+    margin-right:25%;
+}

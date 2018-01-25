@@ -1,0 +1,27 @@
+/*Written by Josefin Reuter 2017*/
+body{
+    background-image: url("../Pictures/santa.jpg");
+    background-size: cover;
+    text-align: center;
+    padding-top: 170px;
+}
+#heading{
+    padding-top: 10px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Mountains of Christmas', cursive;
+}
+#joke{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: Gabriola;
+}
+#content{
+    background-color: rgba(128, 153, 188, 0.9);
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10%;
+    padding-bottom: 10px;
+}

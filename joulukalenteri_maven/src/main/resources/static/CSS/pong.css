@@ -1,0 +1,52 @@
+/*Written by Josefin Reuter 2017*/
+#heading{
+    font-family: 'Mountains of Christmas', cursive;
+}
+body {
+    background-image: url("../Pictures/lights.jpg");
+    background-size: cover;
+    text-align: center;
+    padding-top: 20px;
+}
+#info{
+    font-size: 20px;
+    font-family: Gabriola;
+}
+#content {
+    background-color: rgba(140, 0, 26, 0.6);
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10%;
+    padding-bottom: 10px;
+    padding-top: 3px;
+    color: #FFFFFF;
+}
+form {
+    padding-top: 5px;
+    color: #1D1D1D;
+}
+a:link, a:visited {
+    color: #FFFFFF;
+    font-size: x-large;
+    font-weight: bold;
+}
+#textar{
+   font-size: 15px;
+    letter-spacing: 0.3em;
+}
+#points{
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#end{
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: Gabriola;
+}
+
+

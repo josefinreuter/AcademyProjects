@@ -1,0 +1,33 @@
+/*Written by Hennileena Calonius 2017*/
+body {
+    background-image: url("../Pictures/tonttu.png");
+    background-size: cover;
+    text-align: center;
+}
+
+#tonttuheader {
+    font-family: 'Mountains of Christmas', cursive;
+    color: snow;
+    font-weight: bold;
+    width: 50%;
+    padding: 3px;
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+#tonttucontainer {
+    font-family: Gabriola;
+    font-weight: bold;
+    font-size: 19px;
+    padding-top: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tonttu {
+    color: red;
+    font-size: 25px;
+}

@@ -1,0 +1,52 @@
+<!--Written by Josefin Reuter 2017-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Jouluvisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/CSS/quiz.css" th:href="@{/CSS/quiz.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1 id="heading">Lumiukon jouluvisa</h1>
+<div id="questions">
+
+    <div class="font" th:if="${num!=null}">
+        <p> Kysymys: <span th:text="${num}"></span> / <span th:text="${total}"></span></p>
+    </div>
+    <div class="font" th:each="kysymys : ${quiz}">
+        <p id="question" th:text="${kysymys.kysymys}"></p>
+        <form action="#" th:action="@{/jouluvisa}" th:object="${vastaukset}" method="post">
+
+            <input type="radio" th:value="${kysymys.vastaukset[0].oikeavastaus}" name="option" required="required"/>
+            <label th:text="${kysymys.vastaukset[0].teksti}"></label> <br/>
+
+            <input type="radio" th:value="${kysymys.vastaukset[1].oikeavastaus}" name="option" />
+            <label th:text="${kysymys.vastaukset[1].teksti}"></label> <br/>
+
+            <input type="radio" th:value="${kysymys.vastaukset[2].oikeavastaus}" name="option" />
+            <label th:text="${kysymys.vastaukset[2].teksti}"></label> <br/>
+
+            <input type="hidden" th:value="${current}" name="currentpg"/>
+
+            <input id="submit" class="btn btn-default" type="submit" value="Arvaa!"/>
+        </form>
+    </div>
+    <div th:if="${correct!=null}"
+         th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}">
+        <p class="font" th:if="${correct==true}">HYVÄ, vastasit oikein!!!!! <br></br> <img src="/Pictures/tomte.jpg" alt="tonttu" th:src="@{/Pictures/tomte.jpg}"/></p>
+        <p class="font" th:if="${correct==false}">Väärä vastaus... <br></br><br></br> <img src="/Pictures/2jul.jpg" alt="tonttu" th:src="@{/Pictures/2jul.jpg}"/></p>
+        <p th:if="${8 >= next}"><a href="#" class="btn btn-default" th:href="${urlBuilder.replaceQuery('size=1&amp;page=' + (next + 1)).toUriString()}">Seuraava kysymys</a></p>
+        <p th:if="${9 == next}"> <span class="font">Siinä olivat kaikki kysymykset!</span> <br></br> <a href="#" class="btn btn-default" th:href="${urlBuilder.replaceQuery('size=1&amp;page=0').toUriString()}">Aloita alusta</a></p>
+    </div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

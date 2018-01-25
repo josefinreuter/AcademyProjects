@@ -1,0 +1,24 @@
+<!--written by Hennileena Calonius 2017-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/CSS/translator.css" th:href="@{/CSS/translator.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Jouluinen kääntäjä</title>
+</head>
+<body>
+    <h1 id="heading">Joulun käännöskone</h1>
+    <div>
+        <ul id="linklist">
+            <li th:each="linkki : ${urls.entrySet()}">
+                <a id="link" role="button" class="btn btn-link" href="#" th:href="@{${linkki.key}}" th:text="${linkki.value}"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

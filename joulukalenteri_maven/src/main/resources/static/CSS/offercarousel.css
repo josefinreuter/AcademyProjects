@@ -1,0 +1,21 @@
+/*Written by Hennileena Calonius 2017*/
+img {
+    width: 100%;
+}
+
+h4 {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: x-large;
+    color: #FF3300;
+    font-family: 'Josefin Sans', sans-serif;
+}

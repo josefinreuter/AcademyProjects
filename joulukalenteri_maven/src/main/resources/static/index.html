@@ -1,0 +1,64 @@
+<!--Written by Josefin Reuter, Riina Purovesi, Hennileena Calonius 2017-->
+<!DOCTYPE html>
+<head>
+    <title>Joulukalenteri</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="CSS/modal.css"/>
+    <link rel="stylesheet" href="CSS/index.css"/>
+    <link rel="stylesheet" href="CSS/snowflakes.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <audio id="audio" src="Sound/bell.mp3"></audio>
+        <audio id="fail" src="Sound/fail.mp3"></audio>
+
+        <img id="background" class="img-responsive" src="Pictures/Joulukalenteri.jpg" alt="Kalenteri" height="1266" width="1519"
+         usemap="#calendarmap" />
+        <p class="snowflake">*</p>
+    </div>
+
+    <map name="calendarmap" id="calendarmap">
+
+    <!--Modal message announcing that it is too early to open the door.-->
+    <div id="doorModal" class="modal">
+        <div class="modaltext">
+            <span class="closemodal">&times;</span>
+            <h3>HOU HOU HOU! Tätä luukkua et voi vielä aukaista!</h3>
+        </div>
+    </div>
+
+    <area id="1" shape="poly" coords="301,369,370,369,373,465,297,462" href="#" alt="Door1" onclick="DoorOpen(this.id)"/>
+    <area id="2" shape="poly" coords="1221,781,1261,782,1263,855,1221,857" href="#" alt="Door2" onclick="DoorOpen(this.id)"/>
+    <area id="3" shape="poly" coords="512,826,550,826,552,916,512,916" href="#" alt="Door3" onclick="DoorOpen(this.id)"/>
+    <area id="4" shape="poly" coords="663,542,702,541,701,586,663,586" href="#" alt="Door4" onclick="DoorOpen(this.id)"/>
+    <area id="5" shape="poly" coords="604,970,644,967,641,1064,603,1060" href="#" alt="Door5" onclick="DoorOpen(this.id)"/>
+    <area id="6" shape="poly" coords="396,624,440,623,440,710,394,711" href="#" alt="Door6" onclick="DoorOpen(this.id)"/>
+    <area id="7" shape="poly" coords="608,826,642,824,644,916,608,915" href="#" alt="Door7" onclick="DoorOpen(this.id)"/>
+    <area id="8" shape="poly" coords="1282,561,1342,559,1337,635,1285,632" href="#" alt="Door8" onclick="DoorOpen(this.id)"/>
+    <area id="9" shape="poly" coords="1216,912,1265,911,1263,1005,1216,1005" href="#" alt="Door9" onclick="DoorOpen(this.id)"/>
+    <area id="10" shape="poly" coords="235,622,284,621,284,704,235,703" href="#" alt="Door10" onclick="DoorOpen(this.id)"/>
+    <area id="11" shape="poly" coords="699,827,745,827,743,922,700,922" href="#" alt="Door11" onclick="DoorOpen(this.id)"/>
+    <area id="12" shape="poly" coords="1362,916,1405,913,1405,1000,1361,999" href="#" alt="Door12" onclick="DoorOpen(this.id)"/>
+    <area id="13" shape="poly" coords="1323,270,1370,268,1369,315,1325,312" href="#" alt="Door13" onclick="DoorOpen(this.id)"/>
+    <area id="14" shape="poly" coords="943,453,942,486,1002,484,999,451" href="#" alt="Door14" onclick="DoorOpen(this.id)"/>
+    <area id="15" shape="poly" coords="171,874,220,872,215,923,168,920" href="#" alt="Door15" onclick="DoorOpen(this.id)"/>
+    <area id="16" shape="poly" coords="856,618,906,618,908,658,855,657" href="#" alt="Door16" onclick="DoorOpen(this.id)"/>
+    <area id="17" shape="poly" coords="314,152,361,154,360,192,315,190" href="#" alt="Door17" onclick="DoorOpen(this.id)"/>
+    <area id="18" shape="poly" coords="933,788,979,790,974,827,929,825" href="#" alt="Door18" onclick="DoorOpen(this.id)"/>
+    <area id="19" shape="poly" coords="1363,782,1401,782,1401,863,1359,861" href="#" alt="Door19" onclick="DoorOpen(this.id)"/>
+    <area id="20" shape="poly" coords="396,959,446,960,443,1005,393,1004" href="#" alt="Door20" onclick="DoorOpen(this.id)"/>
+    <area id="21" shape="poly" coords="1045,615,1095,614,1095,654,1045,654" href="#" alt="Door21" onclick="DoorOpen(this.id)"/>
+    <area id="22" shape="poly" coords="1116,868,1162,869,1161,911,1112,905" href="#" alt="Door22" onclick="DoorOpen(this.id)"/>
+    <area id="23" shape="poly" coords="86,640,139,643,130,688,87,688" href="#" alt="Door23" onclick="DoorOpen(this.id)"/>
+    <area id="24" shape="poly" coords="974,327,975,364,1031,365,1029,328" href="#" alt="Door24" onclick="DoorOpen(this.id)"/>
+</map>
+<script src="JavaScript/DoorOpen.js"></script>
+<script src="JavaScript/Links.js"></script>
+<script src="JavaScript/CalendarResponsive.js"></script>
+<script src="JavaScript/Snowflakes.js"></script>
+</body>
+</html>

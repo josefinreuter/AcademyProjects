@@ -1,0 +1,28 @@
+/*Written by Hennileena Calonius 2017*/
+.modal {
+    display: none;
+    position: fixed;
+    background-color: rgba(106, 90, 205, 0.4);
+}
+
+.modaltext {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: darkred;
+    background-color: snow;
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    border-radius: 15%;
+    width: 80%;
+}
+
+.closemodal {
+    color: darkred;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+

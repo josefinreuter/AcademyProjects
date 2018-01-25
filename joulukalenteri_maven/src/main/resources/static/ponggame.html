@@ -1,0 +1,45 @@
+<!--Written by Josefin Reuter 2017-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Pong-peli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="CSS/pong.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="content">
+    <h1 id="heading">Pikkutontun pong-peli</h1>
+    <p id="info">Paina aloita aloittaaksesi pelin. Siirrä levyä liikuttamalla hiirtä pelikentän alla
+        olevien viivojen yli.</p>
+    <form name="form">
+        <span id="gamearea"><textarea name="text3" id="textar" cols="38" rows="16" wrap="hard">Onnea peliin :)</textarea></span><br>
+        <a href="#" onMouseOver="u =0">\\</a>
+        <a href="#" onMouseOver="u =1">\\</a>
+        <a href="#" onMouseOver="u =2">\\</a>
+        <a href="#" onMouseOver="u =3">\\</a>
+        <a href="#" onMouseOver="u =4">\\</a>
+        <a href="#" onMouseOver="u =5">\\</a>
+        <a href="#" onMouseOver="u =6">\\</a>
+        <a href="#" onMouseOver="u =7">\\</a>
+        <a href="#" onMouseOver="u =8">\\</a>
+        <a href="#" onMouseOver="u =9">\\</a>
+        <a href="#" onMouseOver="u = 10">\\</a>
+        <a href="#" onMouseOver="u = 11">\\</a>
+        <a href="#" onMouseOver="u = 12">\\</a>
+        <a href="#" onMouseOver="u = 13">\\</a>
+        <a href="#" onMouseOver="u = 14">\\</a>
+        <a href="#" onMouseOver="u = 15">\\</a><br>
+        <input type=button class="btn btn-default" name="button1" id="button1" value="Aloita" onCLick="startclock(this.form)">
+        <span id="points">Pisteet:</span> <input type=text name=score size=10 value=0> <br><br>
+        <span id="end"></span>
+    </form>
+</div>
+<audio id="sound" src="/Sound/wewish.mp3" preload="auto" loop="loop"/>
+<script src="JavaScript/PongGame.js"></script>
+</body>
+</html>

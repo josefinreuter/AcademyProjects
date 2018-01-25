@@ -1,0 +1,100 @@
+/*Written by Riina Purovesi 2017*/
+body {
+    background-image: url(../Pictures/joulunauhat.jpg);
+    color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    font-family: Gabriola;
+}
+#alku {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 15%;
+    text-align: center;
+}
+#otsikko {
+    color: red;
+    font-weight: bold;
+    font-family: 'Mountains of Christmas', cursive;
+}
+#teksti{
+    font-size: 20px;
+    font-family: Gabriola;
+}
+#container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: transparent;
+    margin-left: 25%;
+}
+#anim {
+    width: 100px;
+    height:70px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20%;
+}
+#pepe {
+    width: 100px;
+    height: 80px;
+    position: static;
+    margin-left: 74%;
+    margin-top: 83%;
+    float: left;
+}
+
+#buttons button {
+    background-color: white;
+    border-radius: 25px;
+    color: red;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+
+} #buttons {
+      margin-left: 40%;
+  }
+.modal {
+    display: none;
+    position: fixed;
+    margin-top: 30%;
+}
+
+.modaltext {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: darkred;
+    background-color: snow;
+    margin: auto;
+    padding: 20px;
+    border: dotted;
+    border-radius: 15%;
+    width: 80%;
+}
+.closemodal1 {
+    cursor: pointer;
+}
+.closemodal2 {
+    cursor: pointer;
+}
+.closemodal3 {
+    cursor: pointer;
+}
+.closemodal4 {
+    cursor: pointer;
+}
+.closemodal5 {
+    cursor: pointer;
+}.closemodal6 {
+     cursor: pointer;
+}
+#voitto {
+    background-color: red;
+    color:white;
+}

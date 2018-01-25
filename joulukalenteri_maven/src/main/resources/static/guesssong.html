@@ -1,0 +1,37 @@
+<!--Written by Riina Purovesi 2017-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/CSS/guesssong.css" th:href="@{/CSS/guesssong.css}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet"/>
+
+    <title>Täytä joululaulun puuttuva sana</title>
+</head>
+<body>
+<h1 id="otsikko">Täytä joululauluihin puuttuvat sanat!</h1>
+
+<div id="visa">
+<form id="word1">
+    <h4 id="SongName"></h4>
+    <h5 id="sav"></h5>
+    <p id="words"></p>
+        <input type="text" name="enkeli" id="enkeli" value="">
+        <p id="words2"></p>
+    <input type="button"onclick="CheckWord(enkeli.value)" value="Tarkista vastaus"/>
+</form>
+    <br>
+    <p id="voittaa"></p>
+    <div id="winning" class="modal">
+        <div id="voitto" class="modaltext">
+            <span class="closemodal1">&times;</span>
+            <h3 id="correct"></h3>
+        </div>
+    </div>
+</div>
+
+<script src="JavaScript/GuessSong.js"></script>
+</body>
+</html>
