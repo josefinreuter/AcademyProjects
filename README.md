@@ -1,2 +1,2 @@
-# AcademyProjektit
-Isommat ryhmätyöt
+# AcademyProjects
+Larger team-projects
