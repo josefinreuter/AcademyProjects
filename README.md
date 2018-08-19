@@ -1,5 +1,5 @@
 # AcademyProjects
-Larger team-projects during the Academy Accelerated Learning course.
+Larger team-projects during Academy Accelerated Learning course.
 
 JunatKonsolissa:
 This was our second team-project, whith a three day deadline. The task was to use https://rata.digitraffic.fi/ train information REST API to create a journey planner application to be run in the console. The application is a plain Java application which fetches JSON data from the API based on the users input and presents the data in a format easy to understand for the user.
