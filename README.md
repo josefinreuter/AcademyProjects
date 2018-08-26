@@ -11,4 +11,4 @@ joulukalenteri_maven:
 This was our final two week project. It is a advent calendar maven web application. Every door contains its own small application, and we were able to finish seventeen doors. Most of the doors are HTML, JavaScript, CSS applications, but we also made three MySQL, SpringBoot, JPA, Thymeleaf doors.
 
 keskustelufoorumi:
-This was our third team-project, which like the second had a three day deadline. The application is a discussion forum with registering, login and message writing functions. The backend is built with a MySQL database and Java servlets and the frontend with JSP-pages and CSS. The application runs on a Tomcat server.
+This was our third team-project, which like the second had a three day deadline. The application is a discussion forum with registering, login and message writing functions. The backend is built with a MySQL database and Java servlets and the frontend with JSP-pages and CSS. The application runs on a (local) Tomcat server.
